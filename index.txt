@@ -1,5 +1,5 @@
-1:HL["/trophy/_next/static/css/8bc51eb3f92ea1b9.css","style",{"crossOrigin":""}]
-0:["nGw7FGTC85M8tAeTfh-jL",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/trophy/_next/static/css/8bc51eb3f92ea1b9.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/trophy/_next/static/css/158880a68e6c2f55.css","style",{"crossOrigin":""}]
+0:["CRTeXx_CEElHWB6mrV83J",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/trophy/_next/static/css/158880a68e6c2f55.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[6954,[],""]
 5:I[7264,[],""]
 7:I[8297,[],""]
