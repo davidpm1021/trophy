@@ -2,9 +2,9 @@
 
 import { useState, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, PresentationControls, Environment, Float } from '@react-three/drei';
+import { OrbitControls, Environment } from '@react-three/drei';
 import { motion } from 'framer-motion';
-import confetti from 'canvas-confetti';
+const confetti = require('canvas-confetti');
 
 console.log('Trophy component loaded');
 
@@ -57,26 +57,12 @@ function Scene() {
         penumbra={1} 
         intensity={1} 
         castShadow
-        shadow-mapSize={[512, 512]}
       />
       <pointLight position={[-10, -10, -10]} intensity={0.5} />
       <Environment preset="sunset" />
-      
-      <PresentationControls
-        global
-        rotation={[0.13, 0.1, 0]}
-        polar={[-0.4, 0.2]}
-        azimuth={[-1, 0.75]}
-      >
-        <Float
-          speed={1.4}
-          rotationIntensity={1.5}
-          floatIntensity={2}
-        >
-          <TrophyModel />
-        </Float>
-      </PresentationControls>
-      
+      <group rotation={[0.13, 0.1, 0]}>
+        <TrophyModel />
+      </group>
       <OrbitControls enableZoom={false} />
     </Suspense>
   );
@@ -140,7 +126,7 @@ export default function Trophy() {
           🏆 Congratulations! 🏆
         </h1>
         <h2 className="text-4xl font-bold text-white" style={{ textShadow: '0 0 10px rgba(255,215,0,0.5)' }}>
-          Your Name Here
+          David
         </h2>
         {showStartButton && (
           <button
